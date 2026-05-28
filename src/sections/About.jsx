@@ -19,9 +19,9 @@ const About = () => {
           <div className="z-10">
             <p className="headtext">Hi, I'm Carlos Guzmán</p>
             <p className="subtext">
-              For the past 4 years, I’ve been crafting frontend and backend
-              experiences that bring ideas to life through clean, dynamic, and
-              scalable web solutions.
+              Over 3 years of professional experience crafting frontend and
+              full-stack solutions — from electronic invoicing platforms and
+              restaurant POS systems to enterprise dashboards and AI chatbots.
             </p>
           </div>
           <div className="absolute inset-x-0 pointer-evets-none -bottom-4 h-1/2 sm:h-1/3 bg-gradient-to-t from-indigo" />

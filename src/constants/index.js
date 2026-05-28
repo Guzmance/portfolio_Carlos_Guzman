@@ -2,6 +2,7 @@ export const myProjects = [
   {
     id: 1,
     title: "E-commerce Platform",
+    category: "E-Commerce",
     description:
       "Developed a modern web platform enabling users to browse, search, and purchase products through a seamless and secure shopping experience.",
 
@@ -40,6 +41,7 @@ export const myProjects = [
   {
     id: 2,
     title: "Electronic Invoicing Web Platform",
+    category: "SaaS",
     description:
       "A fast and user-friendly website for managing electronic invoicing, designed to provide businesses with easy access to compliant digital billing tools.",
 
@@ -80,6 +82,7 @@ export const myProjects = [
   {
     id: 3,
     title: "Electronic Invoicing Application",
+    category: "Cross-Platform",
     description:
       "A cross-platform invoicing app that enables users to create, send, and track electronic invoices with real-time tax validation and offline capabilities.",
 
@@ -124,6 +127,7 @@ export const myProjects = [
   {
     id: 4,
     title: "Corporate Website – Lighthouse S.A. de C.V.",
+    category: "Corporate",
     description:
       "A modern, responsive corporate website designed to showcase Lighthouse S.A. de C.V.'s services, values, and technological expertise across various industries.",
 
@@ -135,7 +139,7 @@ export const myProjects = [
       "To see: https://lighthousegroup.dev/",
     ],
 
-    href: "",
+    href: "https://lighthousegroup.dev/",
     logo: "",
     image: "/assets/projects/lighthouse.webp",
     tags: [
@@ -164,6 +168,7 @@ export const myProjects = [
   {
     id: 5,
     title: "Enterprise Metrics & Control System",
+    category: "Dashboard",
     description:
       "A real-time monitoring and analytics application designed for one of El Salvador’s leading companies, providing data-driven insights and performance tracking across key operational areas.",
 
@@ -202,6 +207,7 @@ export const myProjects = [
   {
     id: 6,
     title: "Netflix Clone",
+    category: "UI Clone",
     description:
       "A front-end replica of Netflix's user interface, offering a dynamic content experience with movie previews, hover effects, and responsive layouts.",
 
@@ -241,6 +247,7 @@ export const myProjects = [
   {
     id: 7,
     title: "Spotify Clone",
+    category: "UI Clone",
     description:
       "A fully functional Spotify-inspired web app that mimics music streaming capabilities with playlists, search, and audio control, built with modern web technologies.",
 
@@ -280,6 +287,7 @@ export const myProjects = [
   {
     id: 8,
     title: "Travel & Weather Advisor",
+    category: "Web App",
     description:
       "A smart travel assistant web app that provides real-time weather updates, travel tips, and destination insights by integrating multiple external APIs.",
 
@@ -320,6 +328,7 @@ export const myProjects = [
   {
     id: 9,
     title: "Food Delivery Mobile App",
+    category: "Mobile App",
     description:
       "A modern mobile application that allows users to browse menus, place food orders, and track delivery status in real-time, designed for a smooth and engaging user experience.",
 
@@ -359,6 +368,7 @@ export const myProjects = [
   {
     id: 10,
     title: "Data Query & Reporting Portal",
+    category: "Dashboard",
     description:
       "An advanced web portal for querying, editing, and visualizing structured data, designed to enhance internal data operations and user interaction through a spreadsheet-like experience.",
 
@@ -396,6 +406,84 @@ export const myProjects = [
       },
     ],
   },
+  {
+    id: 11,
+    title: "Restaurant POS System",
+    category: "POS System",
+    description:
+      "A full-featured point-of-sale system for restaurants, with role-based access, order management, real-time table tracking, and a touch-friendly interface for front-of-house and back-of-house operations.",
+    subDescription: [
+      "Built with React + Vite and Redux Toolkit using a clean DTO/Mapper/Service architecture that keeps UI logic fully decoupled from API calls.",
+      "Implemented role-based routing (waiter, cashier) with PrivateRoute and RequireRole guards, plus a lock screen for quick role switching.",
+      "Designed an interactive floor plan and table management UI with Fabric.js for spatial awareness of table layout and status.",
+      "Integrated react-simple-keyboard for a virtual touch keyboard, making the system kiosk and tablet-friendly in restaurant environments.",
+      "Packaged as a mobile-ready app using Capacitor for Android deployment alongside the web version.",
+    ],
+    href: "",
+    logo: "",
+    image: "/assets/projects/posRestaurante.png",
+    tags: [
+      {
+        id: 1,
+        name: "ReactJS",
+        path: "/assets/logos/react.svg",
+      },
+      {
+        id: 2,
+        name: "Vite",
+        path: "/assets/logos/vitejs.svg",
+      },
+      {
+        id: 3,
+        name: "TailwindCSS",
+        path: "/assets/logos/tailwindcss.svg",
+      },
+      {
+        id: 4,
+        name: "Git",
+        path: "/assets/logos/git.svg",
+      },
+    ],
+  },
+  {
+    id: 12,
+    title: "Inventory & Sales ERP System",
+    category: "ERP System",
+    description:
+      "A full-stack ERP system for inventory control, sales management, and electronic invoicing compliant with El Salvador's Ministerio de Hacienda (DTE), built for production deployment on Railway.",
+    subDescription: [
+      "Built a robust REST API with Laravel (PHP) using Eloquent ORM, role-based access control, and structured service layers for business logic separation.",
+      "Developed the admin panel with Vue 3 + Vuetify using auto-imports, typed routes, and a modular feature-based architecture.",
+      "Implemented full electronic invoicing (DTE) support: generates FCF, CCF, and NC documents per MH schemas, signs them via the official government firmador Docker image, and transmits to the Ministerio de Hacienda API.",
+      "Containerized with Docker Compose for both development and production environments, with optimized Nginx + Supervisor configuration for zero-downtime deploys.",
+      "Deployed to Railway with separate services for API, admin frontend, and the DTE firmador, all connected via internal networking.",
+    ],
+    href: "",
+    logo: "",
+    image: "/assets/projects/Sistema-de-inventario.png",
+    tags: [
+      {
+        id: 1,
+        name: "VueJS",
+        path: "/assets/logos/vue.png",
+      },
+      {
+        id: 2,
+        name: "Vite",
+        path: "/assets/logos/vitejs.svg",
+      },
+      {
+        id: 3,
+        name: "TailwindCSS",
+        path: "/assets/logos/tailwindcss.svg",
+      },
+      {
+        id: 4,
+        name: "Git",
+        path: "/assets/logos/git.svg",
+      },
+    ],
+  },
 ];
 
 export const mySocials = [
@@ -422,24 +510,42 @@ export const experiences = [
     job: "Lighthouse S.A. de C.V.",
     date: "April 2024 – Present",
     contents: [
-      "Design and development of projects using .NET, React, Angular, and Vue.js, depending on project requirements.",
-      "Created responsive, SEO-optimized interfaces with a focus on user experience and performance.",
-      "Developed reusable UI components for scalable and maintainable applications.",
-      "Integrated frontend interfaces with RESTful backend APIs.",
-      "Conducted thorough testing and debugging to ensure quality and stability.",
-      "Managed version control, collaborated with cross-functional teams, and contributed to code reviews.",
-      "Performed regular maintenance and implemented feature updates based on evolving business needs.",
+      "Design and develop web projects using React, Angular, Vue.js, and Blazor/ASP.NET according to client requirements.",
+      "Build clean, functional, and responsive UIs with a strong focus on performance and accessibility.",
+      "Design and implement reusable component libraries documented for team-wide use.",
+      "Implement state management with Redux, Zustand, and Pinia across different stacks.",
+      "Optimize render performance to ensure fast and efficient applications across all supported browsers and devices.",
+      "Integrate backend services and RESTful APIs into frontend applications.",
+      "Implement AI chatbots using the Claude API (Anthropic) integrated into web applications.",
+      "Apply SEO best practices and conduct unit and integration testing to ensure product quality.",
+      "Manage version control and code collaboration through Git and GitHub.",
+      "Lead component code reviews, enforce quality standards, and mentor Junior Engineers in frontend best practices.",
+      "Propose and drive frontend architecture improvements to scale projects sustainably.",
+      "Document component patterns to facilitate the onboarding of new team members.",
+      "Develop and deliver complete systems including electronic invoicing platforms and a restaurant POS with integrated DTE.",
+      "Collaborate closely with the design team for faithful implementation of Figma designs and UX flows.",
     ],
   },
   {
-    title: "IT Support Technician",
+    title: "IT Support",
     job: "Instituto Salvadoreño de Fomento Cooperativo (INSAFOCOOP)",
-    date: "2023",
+    date: "January 2024 – April 2024",
     contents: [
-      "Automated internal systems using Google Apps Script to improve administrative workflows.",
-      "Provided technical support, including OS installations and preventive/corrective maintenance of computer equipment.",
-      "Assisted with live event technology: audio setup, multimedia equipment, and live streaming operations across multiple locations.",
-      "Trained staff on proper use of IT systems and provided hands-on technical assistance.",
+      "Created, maintained, and tested automated systems using Google Apps Script to improve operational efficiency.",
+      "Installed operating systems and performed preventive and corrective maintenance on computer equipment.",
+      "Provided training and technical assistance to staff on the proper use of company systems.",
+      "Automated internal processes reducing manual workload across administrative areas.",
+    ],
+  },
+  {
+    title: "Industrial Technician",
+    job: "Proyectos Electromecánicos Industriales",
+    date: "April 2023 – April 2024",
+    contents: [
+      "Executed preventive and corrective maintenance on construction and stationary industrial equipment.",
+      "Diagnosed and repaired electric generators, compressors, motors, and pumping systems.",
+      "Prepared status reports on intervened equipment and guaranteed continuous operability.",
+      "Reduced equipment downtime through proactive maintenance scheduling and diagnostics.",
     ],
   },
   {

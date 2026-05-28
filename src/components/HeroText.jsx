@@ -48,7 +48,7 @@ const words = ["Intuitive", "Reliable","Secure", "Modern", "Scalable", ];
             animate="visible"
             transition={{ delay: 1.8 }}
           >
-            Frontend Solutions
+            Solutions
           </motion.p>
         </div>
       </div>
@@ -91,7 +91,7 @@ const words = ["Intuitive", "Reliable","Secure", "Modern", "Scalable", ];
             animate="visible"
             transition={{ delay: 1.8 }}
           >
-            Frontend Solutions
+            Solutions
           </motion.p>
         </div>
       </div>
